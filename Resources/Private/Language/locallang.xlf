@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-08-11T15:08:42Z" product-name="pmfaq">
+		<header/>
+		<body>
+			<trans-unit id="tx_pmfaq_domain_model_eintrag">
+				<source>Eintrag</source>
+			</trans-unit>
+			<trans-unit id="tx_pmfaq_domain_model_eintrag.frage">
+				<source>Frage</source>
+			</trans-unit>
+			<trans-unit id="tx_pmfaq_domain_model_eintrag.antwort">
+				<source>Antwort</source>
+			</trans-unit>
+			<trans-unit id="tx_pmfaq_domain_model_eintrag.kategorien">
+				<source>Kategorien</source>
+			</trans-unit>
+			<trans-unit id="tx_pmfaq_domain_model_kategorie">
+				<source>Kategorie</source>
+			</trans-unit>
+			<trans-unit id="tx_pmfaq_domain_model_kategorie.name">
+				<source>Name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

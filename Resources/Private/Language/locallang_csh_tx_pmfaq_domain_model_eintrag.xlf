@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-08-11T15:08:42Z" product-name="pmfaq">
+		<header/>
+		<body>
+			<trans-unit id="frage.description">
+				<source>Frage</source>
+			</trans-unit>
+			<trans-unit id="antwort.description">
+				<source>Antwort</source>
+			</trans-unit>
+			<trans-unit id="kategorien.description">
+				<source>Kategorien</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

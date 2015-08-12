@@ -1,0 +1,20 @@
+
+plugin.tx_pmfaq {
+	view {
+		templateRootPath = {$plugin.tx_pmfaq.view.templateRootPath}
+		partialRootPath = {$plugin.tx_pmfaq.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_pmfaq.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_pmfaq.persistence.storagePid}
+	}
+	settings {
+		storagePid = {$plugin.tx_pmfaq.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+page.includeCSS.tx_pmfaq = EXT:pmfaq/Resources/Public/CSS/pmfaq.css

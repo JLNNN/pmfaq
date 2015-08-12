@@ -1,0 +1,15 @@
+
+plugin.tx_pmfaq {
+	view {
+		# cat=plugin.tx_pmfaq/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:pmfaq/Resources/Private/Templates/
+		# cat=plugin.tx_pmfaq/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:pmfaq/Resources/Private/Partials/
+		# cat=plugin.tx_pmfaq/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:pmfaq/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_pmfaq//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

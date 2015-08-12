@@ -1,0 +1,16 @@
+.tx-pmfaq .frage {
+    line-height: 1.7em;
+    height: 3.4em;
+    margin-bottom: 10px;
+}
+
+.tx-pmfaq .antwort {
+    padding-left: 15px;
+    border-left: 2px solid #005091;
+}
+
+p.backlink {
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+    margin-top: 30px !important;
+}

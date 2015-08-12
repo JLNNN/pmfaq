@@ -1,0 +1,16 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<p>Bitte wählen Sie eine Kategorie:</p>
+
+<f:for each="{kategorien}" as="cat" iteration="citr">
+    <f:if condition="{citr.isFirst}"><ul class="categories"></f:if>
+        <li class="cat">
+            <f:link.action action="showKategorie" arguments="{kategorie: cat}">{cat.name}</f:link.action>
+        </li>
+    <f:if condition="{citr.isLast}"></ul></f:if>
+</f:for>
+
+</f:section>

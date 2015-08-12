@@ -1,0 +1,26 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<h2>Kategorie: {kategorie.name}</h2>
+
+<f:if condition="{entries->f:count()} > 0">
+    <f:then>
+        <f:for each="{entries}" as="faq" iteration="eitr">
+            <f:if condition="{eitr.isFirst}"><div class="cols cols-2 clearfix faqs"></f:if>
+                <div class="faq col" itemscope itemtype="http://schema.org/Question">
+                    <div class="frage"><h4 itemprop="name">{faq.frage}</h4></div>
+                    <div class="antwort" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="answer" itemprop="text"><f:format.html>{faq.antwort}</f:format.html></div></div>
+                </div>
+            <f:if condition="{eitr.isLast}"></div></f:if>
+        </f:for>
+    </f:then>
+    <f:else>
+        <p>Keine Einträge vorhanden.</p>
+    </f:else>
+</f:if>
+
+<p class="backlink"><f:link.page pageUid="{backPid}">Zurück zur Übersicht</f:link.page></p>
+
+</f:section>
