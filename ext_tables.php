@@ -36,7 +36,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 		),
 		'searchFields' => 'frage,antwort,kategorien,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Eintrag.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_pmfaq_domain_model_eintrag.gif'
+		'iconfile' => 'EXT:pmfaq/Resources/Public/Icons/tx_pmfaq_domain_model_eintrag.gif'
 	),
 );
 
@@ -65,6 +65,6 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_kategorie'] = array(
 		),
 		'searchFields' => 'name,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Kategorie.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_pmfaq_domain_model_kategorie.gif'
+		'iconfile' => 'EXT:pmfaq/Resources/Public/Icons/tx_pmfaq_domain_model_kategorie.gif'
 	),
 );

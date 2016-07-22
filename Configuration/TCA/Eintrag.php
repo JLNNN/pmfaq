@@ -21,6 +21,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'foreign_table' => 'sys_language',
 				'foreign_table_where' => 'ORDER BY sys_language.title',
 				'items' => array(
@@ -35,6 +36,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'items' => array(
 					array('', 0),
 				),
@@ -119,7 +121,9 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 						'icon' => 'wizard_rte2.gif',
 						'notNewRecords'=> 1,
 						'RTEonly' => 1,
-						'script' => 'wizard_rte.php',
+						'module' => array(
+							'name' => 'wizard_rte',
+						),
 						'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
 						'type' => 'script'
 					)
@@ -131,6 +135,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 			'label' => 'LLL:EXT:pmfaq/Resources/Private/Language/locallang_db.xlf:tx_pmfaq_domain_model_eintrag.kategorien',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'foreign_table' => 'tx_pmfaq_domain_model_kategorie',
 				'MM' => 'tx_pmfaq_eintrag_kategorie_mm',
 				'size' => 10,
@@ -144,7 +149,9 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 					'edit' => array(
 						'type' => 'popup',
 						'title' => 'Edit',
-						'script' => 'wizard_edit.php',
+						'module' => array(
+							'name' => 'wizard_edit',
+						),
 						'icon' => 'edit2.gif',
 						'popup_onlyOpenIfSelected' => 1,
 						'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
@@ -158,7 +165,9 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_eintrag'] = array(
 							'pid' => '###CURRENT_PID###',
 							'setValue' => 'prepend'
 							),
-						'script' => 'wizard_add.php',
+							'module' => array(
+								'name' => 'wizard_add',
+							),
 					),
 				),
 			),

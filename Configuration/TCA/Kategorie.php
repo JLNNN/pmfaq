@@ -15,12 +15,13 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_kategorie'] = array(
 		'1' => array('showitem' => ''),
 	),
 	'columns' => array(
-	
+
 		'sys_language_uid' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'foreign_table' => 'sys_language',
 				'foreign_table_where' => 'ORDER BY sys_language.title',
 				'items' => array(
@@ -35,6 +36,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_kategorie'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'items' => array(
 					array('', 0),
 				),
@@ -56,7 +58,7 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_kategorie'] = array(
 				'max' => 255,
 			)
 		),
-	
+
 		'hidden' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -106,6 +108,6 @@ $GLOBALS['TCA']['tx_pmfaq_domain_model_kategorie'] = array(
 				'eval' => 'trim'
 			),
 		),
-		
+
 	),
 );
